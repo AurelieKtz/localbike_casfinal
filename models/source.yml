@@ -5,6 +5,7 @@ sources:
     schema: localbike
     tables:
       - name: brands
+      - name: orders
       - name: categories
       - name: customers
       - name: order_items
