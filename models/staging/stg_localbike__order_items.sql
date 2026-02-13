@@ -5,6 +5,6 @@ product_id,
 quantity as item_quantity, 
 list_price as price_quantity, 
 discount,
-quantity * (list_price - list_price * discount) as total_order_item_amount_discount,
+list_price * ( 1 - discount) *quantity  as total_order_item_amount_discount,
 quantity * list_price as total_order_item_amount_no_discount
 FROM {{source('localbike','order_items')}}
