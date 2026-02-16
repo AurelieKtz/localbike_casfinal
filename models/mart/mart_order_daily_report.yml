@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: mart_order_daily_report
+    description: '{{ doc("mart_order_daily_report") }}'
+ 

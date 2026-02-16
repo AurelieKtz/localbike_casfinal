@@ -8,6 +8,7 @@ o.order_status,
 o.order_date, 
 o.shipped_date, 
 o.store_id, 
+s.staff_id,
 concat(s.first_name, " ", s.last_name) as staff_fullname
 FROM {{ref("stg_localbike__orders")}} o 
 left join {{ref("stg_localbike__customers")}} c on o.customer_id=c.customer_id
