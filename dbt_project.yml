@@ -44,13 +44,11 @@ models:
 
     staging:
       +materialized: view
-      localbike:
-        +schema: stg_localbike
+      +schema: stg_localbike
 
     intermediate:
-      +materialized: view
-      localbike:
-        +schema: int_localbike
+      +materialized: table
+      +schema: int_localbike
 
     mart:
       +schema: mart_localbike

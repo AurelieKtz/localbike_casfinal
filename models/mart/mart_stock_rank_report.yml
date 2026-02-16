@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: mart_stock_rank_report
+    description: '{{ doc("mart_stock_rank_report") }}'
+    columns:
+      - name: product_id
+        description: "Primary key, unique identifier for each order."
+        tests:
+          - unique
+          - not_null
