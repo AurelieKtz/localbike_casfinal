@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_localbike__stores
+    description: '{{ doc("int_localbike__stores") }}'
+    columns:
+      - name: store_id
+        description: "Primary key, unique identifier for each order."
+        tests:
+          - unique
+          - not_null
